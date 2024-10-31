@@ -68,6 +68,8 @@
     </Compile>
     <Compile Include="RegistroDeUsuarios.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="Viaje.cs" />
+    <Compile Include="ViajesDisponibles.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
