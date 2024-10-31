@@ -18,7 +18,7 @@ namespace AplicacionViajes
             new Viaje(new DateTime(2024, 11, 03, 06, 30, 00), "CANADA")
         };
 
-        public ViajesDisponibles(DataGridView dataGridViewViajesDisponibles)
+        public void _ReferenciarData(DataGridView dataGridViewViajesDisponibles)
         {
             this.dataGridViewViajesDisponibles = dataGridViewViajesDisponibles;
         }

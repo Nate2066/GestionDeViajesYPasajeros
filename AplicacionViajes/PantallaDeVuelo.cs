@@ -12,19 +12,21 @@ namespace AplicacionViajes
 {
     public partial class PantallaDeVuelo : Form
     {
-        public ViajesDisponibles classViajesDisponibles;
-        public ProgramarViaje formProgramarViaje;
+        public ViajesDisponibles classViajesDisponibles = new ViajesDisponibles();
         public PantallaDeVuelo()
         {
             InitializeComponent();
-            classViajesDisponibles = new ViajesDisponibles(dataTableroViajesDisponibles);
+            classViajesDisponibles._ReferenciarData(dataTableroViajesDisponibles);
             classViajesDisponibles._ActualizarData();
-            formProgramarViaje = new ProgramarViaje();
         }
 
         private void bttProgramarViaje_Click(object sender, EventArgs e)
         {
-            formProgramarViaje.Show();
+        }
+
+        private void bttAgregarViaje_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
